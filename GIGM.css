@@ -1,0 +1,442 @@
+body{
+    background-color: #F5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 1st Section */
+#home{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8),transparent 30%,rgb(119, 24, 72, 0.5)), url(./road_highway_night_146322_2560x1080.jpg);
+    padding: 50px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: fill;
+}
+#home{
+    color: white;
+}
+/* Navbar */
+@media only screen and (min-width: 768px){
+    #home nav{
+        padding: 1%;
+    }
+}
+#home nav{
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#home nav .navbar-header{
+    position: relative;
+    display: flex;
+    padding-left: 3%;
+}
+#home nav img{
+    width: 60px;
+}
+#home nav #link{
+    width: 60px;
+}
+#home nav .glyphicon{
+    color: red;
+    font-size: 25px;
+    text-align: right;
+    float: right;
+}
+#home nav .navbar-right{
+    padding-top: 10px;
+    padding-right: 1%;
+}
+#home nav li a{
+    color: black;
+    font-size: 17px;
+}
+#home nav li button{
+    background-color: #56ccf2;
+    font-weight: 700;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: transparent;
+    border-radius: 10px;
+}
+/* Navbar ends */
+/* Intro text */
+#home #text{
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+@media only screen and (min-width: 990px){
+    #home #text{
+        padding-top: 15%;
+        padding-bottom: 8%;
+    }
+}
+#home #text h1{
+    font-size: 46px;
+    font-weight: bolder;
+    line-height: 48px;
+    color: whitesmoke;
+    word-spacing: 0px;
+}
+@media only screen and (max-width: 768px){
+    #home #text h1{
+        font-size: 33px;
+        line-height: 35px;
+        margin-bottom: 5px;
+        font-weight: bolder;
+    }
+}
+#home #text #sub-text{
+    padding-left: 0px;
+}
+#home #text h3{
+    font-size: 19px;
+    line-height: 31px;
+}
+@media only screen and (max-width: 768px){
+    #home #text h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+/* Intro text ends */
+/* Travel form */
+@media only screen and (min-width: 990px){
+    #home #transport{
+        padding-top: 18%;
+    }
+}
+#home #transport{
+    padding-top: 70px;
+}
+#home #transport .position{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    min-height: 200px;
+    border-radius: 20px;
+}
+#home #transport .position .position-filters{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 80em;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 20px 20px 0px 0px;
+    backdrop-filter: blur(5px);
+}
+#home #transport .position .position-filters .tabb-label{
+    font-family: "EuclidCircularB-Bold", "Inter", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.active-tab{
+    color: white;
+    border-bottom: 3px solid #56ccf2;
+    font-family: "EuclidCircularB-Bold", "Inter", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+#home #transport #transport-body{
+    display: block;
+    padding: 20px;
+    margin: auto;
+    color: white;
+}
+#home #transport #transport-body #one-way{
+    display: none;
+}
+#home #transport #transport-body #one-way-book{
+    background-color: #56ccf2;
+    color: white;
+    display: inline-block;
+    margin: 0px 10px 10px 0;
+    text-align: center;
+    font-size: normal;
+    font-weight: normal;
+    line-height: 28px;
+    padding: 5px 10px;
+    border: 2px solid #56ccf2;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#home #transport #transport-body #round-trip{
+    display: none;
+}
+#home #transport #transport-body #round-trip-book{
+    background-color: transparent;
+    color: #56ccf2;
+    border-color: #56ccf2;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    font-weight: normal;
+    font-weight: normal;
+    line-height: 28px;
+    padding: 5px 10px;
+    border: 2px solid #56ccf2;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#form .form-group{
+    margin-bottom: 25px;
+}
+#form label{
+    font-size: 17px;
+    font-weight: normal;
+}
+#form select{
+    background-color: transparent;
+    border: 1px solid #56ccf2;
+    backdrop-filter: blur(10px);
+    display: block;
+    border-radius: 8px;
+    height: 45px;
+    color: white;
+    font-size: 13px;
+    padding-right: 10px;
+}
+#form select:hover{
+    font-size: 16px;
+}
+#form select option{
+    color: black;
+    background-color: white;
+    border: 1px dashed #56ccf2;
+    height: 50px;
+}
+#form select option:hover{
+    background-color: transparent;
+}
+#form input{
+    background-color: transparent;
+    border: 1px solid #56ccf2;
+    backdrop-filter: blur(10px);
+    display: inline-block;
+    border-radius: 8px;
+    height: 45px;
+    color: white;
+    font-size: 13px;
+}
+#form input.btn{
+    background-color: #757575;
+    backdrop-filter: blur(50px);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+#form input.btn:hover{
+    background-color: #56cbf296;
+}
+/* Travel form ends */
+/* 1st Section ends */
+
+/* 2nd Section */
+#prices{
+    background-color: #F5f5f5;
+    padding-top: 13%;
+    padding-bottom: 12%;
+    text-align: left;
+}
+#prices #prices-text h1{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    word-spacing: 0;
+}
+#prices #prices-text #sub-text{
+    padding-left: 0;
+}
+#prices #prices-text h3{
+    font-size: 24px;
+}
+/* 2nd section ends */
+
+/* 3rd section */
+#app #appvantage{
+    background-color: #56ccf2;
+    padding: 125px 100px ;
+    height: max-content;
+}
+#app #appvantage h3{
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 55px;
+    color: #292727;
+    margin-bottom: 5px;
+}
+#app #appvantage h3 span{
+    color: red;
+}
+#app #appvantage #sub-text{
+    padding-left: auto;
+}
+#app #appvantage h6{
+    font-size: 15px;
+    line-height: 20px;
+}
+#app #appvantage #playstore{
+    padding-left: auto;
+    padding-right: 0;
+    margin-top: 3%;
+}
+#app #mobile{
+    height: 485px;
+    background-size: cover;
+    position: relative;
+}
+/* @media only screen and (max-width: 1400px){
+    #app #mobile{
+        padding: 50%;
+    }
+}
+/* 3rd Section ends */
+
+/* 4th Section */
+#wallet{
+    z-index: 3;
+    padding: 3% 2% 2%;
+    background-color: #f5f5f5;
+    position: sticky;
+}
+#wallet #text{
+    padding-top: 7%;
+    color: rgb(65, 65, 65);
+}
+#wallet #text h1{
+    font-size: 50px;
+    font-weight: bold ;
+    font-family: "EuclidCircularB-Bold", "Inter", sans-serif;
+    line-height: 62px;
+}
+#wallet #sub-text{
+    padding-left: 0;
+}
+#wallet #sub-text h5{
+    line-height: 18px;
+    font-size: 15px;
+}
+#wallet #card{
+    padding-top: 2%;
+}
+/* 4th section ends */
+
+/* 5th Section */
+#earn{
+    background-color: #DBE9FF;
+    padding-left: 40px;
+    margin-bottom: 60px;
+}
+#earn #earneasy{
+    background-color: #43C6DB;
+    padding-top: 20px;
+    padding-right: 90px;
+    color: black;
+    border-radius: 15px;
+}
+#earn #earneasy h1{
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+#earn #earneasy h4{
+    line-height: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #292727;
+}
+#earn #earneasy button{
+    background-color: red;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+#earn #earneasy img{
+    height: 100%;
+}
+/* 5th section ends */
+
+/* 6th section */
+#news{
+    margin-bottom: 80px;
+}
+#news .container{
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+}
+#news #text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#news #text h1{
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 40px;
+}
+#news #email{
+    height: 42px;
+    margin-top: 46px;
+    border: 1px solid #56ccf2;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    margin-bottom: -33px;
+    margin-right: -15px;
+    padding-left: 25px;
+}
+#news #suscribe{
+    height: 38px;
+    width: 98%;
+    background-color: #F70D1A;
+    color: white;
+    border: transparent;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-right: -25px;
+
+}
+/* 6th section ends */
+
+/* Footer */
+#footer{
+    /* padding-bottom: 100px; */
+}
+#footer img{
+    padding-left: 30px;
+    width: 25%;
+}
+#footer #text h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+#footer #text ul{
+    padding-left: 0px;
+    color: black;
+    padding-bottom: 100px;
+}
+#footer #text li{
+    list-style: none;
+    color: black;
+}
+#footer #text li a {
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+}
+#footer .ff{
+    border-top: 1px dashed #43C6DB;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
